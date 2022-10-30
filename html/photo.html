@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>使用拍照</title>
+</head>
+<body>
+  <div id="app">
+    <div>
+      <button @click="doTake">take photo</button>
+    </div>
+    <video ref="video" autoplay controls width="400"></video>
+    <canvas ref="canvas" width="400" height="300"></canvas>
+  </div>
+  <script src="../lib/vue.js"></script>
+  <script src="../js/photo.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>录屏</title>
+</head>
+<body>
+  <div id="app">
+    <!-- 操作流程 先start -> stop -> play -->
+    <div>
+      <button @click="doStart">start</button>
+      <button @click="doPause">pause</button>
+      <button @click="doResume">resume</button>
+      <button @click="doStop">stop</button>
+      <button @click="doPlay">play</button>
+    </div>
+    <div style="display: flex;">
+      <div style="margin-right: 50px;">
+        <h5>录制屏幕</h5>
+        <video ref="videoPrivew" autoplay controls width="500" height="300"></video>
+      </div>
+      <div>
+        <h5>播放录制屏幕的信息</h5>
+        <video ref="video" controls width="500" height="300"></video>
+      </div>
+    </div>
+  </div>
+  <script src="../lib/vue.js"></script>
+  <script src="../js/screen.js"></script>
+</body>
+</html>

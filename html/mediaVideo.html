@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>录制视频播放</title>
+</head>
+<body>
+  <div id="app">
+    <div>
+      <button @click="doStart">start</button>
+      <button @click="doPause">pause</button>
+      <button @click="doResume">resume</button>
+      <button @click="doStop">stop</button>
+      <button @click="doPlay">play</button>
+    </div>
+    <video ref="videoPrivew" autoplay controls width="500" height="300"></video>
+    <video ref="video" controls width="500" height="300"></video>
+  </div>
+  <script src="../lib/vue.js"></script>
+  <script src="../js/mediaVideo.js"></script>
+</body>
+</html>

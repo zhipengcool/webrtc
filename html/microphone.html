@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>使用麦克风</title>
+</head>
+<body>
+  <div id="app">
+    <div style="margin-bottom: 10px;">
+      <select v-model="selectAudioIndex">
+        <option v-for="(item, index) in audioInputDevice" :value="index">{{item.kind}}</option>
+      </select>
+    </div>
+    <audio ref="audio" controls></audio>
+  </div>
+  <script src="../lib/vue.js"></script>
+  <script src="../js/microphone.js"></script>
+</body>
+</html>

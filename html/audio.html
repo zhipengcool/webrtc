@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>使用音频播放</title>
+</head>
+<body>
+  <div id="app">
+    <div>
+      <button @click="doStart">start</button>
+      <button @click="doPause">pause</button>
+      <button @click="doResume">resume</button>
+      <button @click="doStop">stop</button>
+      <button @click="doPlay">play</button>
+    </div>
+    <audio ref="audio" controls></audio>
+  </div>
+  <script src="../lib/vue.js"></script>
+  <script src="../js/audio.js"></script>
+</body>
+</html>
