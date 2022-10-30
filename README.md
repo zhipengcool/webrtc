@@ -1,0 +1,2 @@
+# webrtc
+利用H5的navigator.mediaDevices实现的一些DEMO，包括canvas实现拍照、滤镜以及视频声音和右下角图像
